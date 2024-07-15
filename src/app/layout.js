@@ -1,14 +1,14 @@
-import { Inter } from "next/font/google";
-import "./globals.css";
-import Header from "@/components/Header";
-import Providers from "./Providers";
+import { Inter } from "next/font/google"
+import "./globals.css"
+import Header from "@/components/Header"
+import Providers from "./Providers"
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
   title: "Movie App",
   description: "nextjs-movies",
-};
+}
 
 export default function RootLayout({ children }) {
   return (
@@ -20,5 +20,5 @@ export default function RootLayout({ children }) {
         </Providers>
       </body>
     </html>
-  );
+  )
 }

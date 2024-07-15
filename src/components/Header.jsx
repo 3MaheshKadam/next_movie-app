@@ -1,9 +1,9 @@
-import React from "react";
-import MenuItem from "./MenuItem";
-import { AiFillHome } from "react-icons/ai";
-import { BsFillInfoCircleFill } from "react-icons/bs";
-import Link from "next/link";
-import DarkModeSwitch from "./DarkModeSwitch";
+import React from "react"
+import MenuItem from "./MenuItem"
+import { AiFillHome } from "react-icons/ai"
+import { BsFillInfoCircleFill } from "react-icons/bs"
+import Link from "next/link"
+import DarkModeSwitch from "./DarkModeSwitch"
 const Header = () => {
   return (
     <div className="flex justify-between items-center p-3 max-w-6xl mx-auto">
@@ -21,7 +21,7 @@ const Header = () => {
         </Link>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
