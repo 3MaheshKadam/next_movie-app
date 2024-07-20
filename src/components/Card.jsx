@@ -6,7 +6,7 @@ export default function Card({ result }) {
   return (
     <div className="px-12 sm:px-0 group cursor-pointer sm:hover:shadow-slate-400 sm:shadow-md rounded-lg sm:border sm:border-slate-400 sm:m-2 transition-shadow duration-200">
       <Link href={`/movie/${result.id}`}>
-        <div className="relative w-full h-52 sm:rounded-t-lg overflow-hidden">
+        <div className="relative w-full h-40 sm:rounded-t-lg overflow-hidden">
           <Image
             src={`https://image.tmdb.org/t/p/original/${
               result.backdrop_path || result.poster_path
