@@ -1,12 +1,12 @@
-"use client";
-import { MdLightMode, MdDarkMode } from "react-icons/md";
-import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
+"use client"
+import { MdLightMode, MdDarkMode } from "react-icons/md"
+import { useTheme } from "next-themes"
+import { useEffect, useState } from "react"
 const DarkModeSwitch = () => {
-  const { theme, setTheme, systemTheme } = useTheme();
-  const currentTheme = theme === "system" ? systemTheme : theme;
-  const [mounted, setMounted] = useState(false);
-  useEffect(() => setMounted(true), []);
+  const { theme, setTheme, systemTheme } = useTheme()
+  const currentTheme = theme === "system" ? systemTheme : theme
+  const [mounted, setMounted] = useState(false)
+  useEffect(() => setMounted(true), [])
   return (
     <div>
       {mounted &&
@@ -22,7 +22,7 @@ const DarkModeSwitch = () => {
           />
         ))}
     </div>
-  );
-};
+  )
+}
 
-export default DarkModeSwitch;
+export default DarkModeSwitch
